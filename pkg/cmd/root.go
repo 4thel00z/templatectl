@@ -42,6 +42,9 @@ func Run() {
 	Init.PersistentFlags().BoolP("force", "f", false, "Recreate directories if they exist")
 	Root.AddCommand(Init)
 
+	Upgrade.PersistentFlags().BoolP("verbose", "v", false, "Print upgrade progress")
+	Root.AddCommand(Upgrade)
+
 	Root.AddCommand(ConfigureBashCompletion)
 
 	Root.AddCommand(Template)
