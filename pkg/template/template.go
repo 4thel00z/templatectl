@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"text/template"
 
-	"github.com/4thel00z/templatectl/pkg/templatectl"
 	"github.com/4thel00z/templatectl/pkg/prompt"
+	"github.com/4thel00z/templatectl/pkg/templatectl"
 	"github.com/4thel00z/templatectl/pkg/util/osutil"
 	"github.com/4thel00z/templatectl/pkg/util/stringutil"
 	"github.com/4thel00z/templatectl/pkg/util/tlog"

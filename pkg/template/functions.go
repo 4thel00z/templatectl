@@ -85,6 +85,8 @@ var (
 
 		// String utilities
 		"toLower": strings.ToLower,
+		"lower": strings.ToLower,
+		"upper": strings.ToUpper,
 		"toUpper": strings.ToUpper,
 		"toTitle": strings.ToTitle,
 		"title":   strings.Title,
