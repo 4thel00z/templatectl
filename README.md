@@ -4,7 +4,7 @@
 
 ## Motivation
 
-templatectl is abandonware, let's do our own thing.
+[boilr](https://github.com/tmrts/boilr) is abandonware, let's do our own thing.
 
 ## Usage
 
