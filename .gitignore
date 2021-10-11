@@ -30,3 +30,4 @@ vendor
 # don't accidentally commit a build of main
 templatectl
 .idea
+dist
