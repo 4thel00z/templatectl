@@ -6,8 +6,20 @@
 
 [boilr](https://github.com/tmrts/boilr) is abandonware, let's do our own thing.
 
-## Usage
+## Installation
 
+```
+go get github.com/4thel00z/templatectl
+```
+
+## Upgrade
+
+You can update to the newest version of templatectl using:
+```
+templatectl upgrade
+```
+
+## Usage
 
 ### Download a Template
 In order to download a template from a github repository, use the following command:
