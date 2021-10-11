@@ -9,7 +9,7 @@ import (
 	cli "github.com/spf13/cobra"
 )
 
-const version = "v0.1.4"
+const version = "v0.2.0"
 
 func upgrade(cmd *cli.Command, verbose bool, previous semver.Version) error {
 	if verbose {
