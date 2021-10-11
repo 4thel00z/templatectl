@@ -1,8 +1,10 @@
 # templatectl
 
+![templatectl.png](https://raw.githubusercontent.com/4thel00z/logos/master/templatectl.png)
+
 ## Motivation
 
-templatectl is abandonware, let's do our own thing
+boilr is abandonware, let's do our own thing.
 
 ## License
 
