@@ -18,11 +18,12 @@ var (
 		// TODO value prompt
 		// TODO encoding utilities (e.g. toBinary)
 		// TODO GET, POST utilities
-		// TODO Hostname(Also accesible through $HOSTNAME), interface IP addr, etc.
+		// TODO Hostname(Also accessible through $HOSTNAME), interface IP addr, etc.
 		// TODO add validate for custom regex and expose validate package
-		"env":      os.Getenv,
-		"time":     CurrentTimeInFmt,
-		"hostname": func() string { return os.Getenv("HOSTNAME") },
+		"env":          os.Getenv,
+		"time":         CurrentTimeInFmt,
+		"currentDate": CurrentDate,
+		"hostname":     func() string { return os.Getenv("HOSTNAME") },
 		"username": func() string {
 			t, err := user.Current()
 			if err != nil {
@@ -85,8 +86,8 @@ var (
 
 		// String utilities
 		"toLower": strings.ToLower,
-		"lower": strings.ToLower,
-		"upper": strings.ToUpper,
+		"lower":   strings.ToLower,
+		"upper":   strings.ToUpper,
 		"toUpper": strings.ToUpper,
 		"toTitle": strings.ToTitle,
 		"title":   strings.Title,
@@ -111,4 +112,9 @@ func CurrentTimeInFmt(fmt string) string {
 	t := time.Now()
 
 	return t.Format(fmt)
+}
+
+func CurrentDate() string {
+	t := time.Now()
+	return fmt.Sprintf("%d-%d-%d", t.Year(), t.Month(), t.Day())
 }
